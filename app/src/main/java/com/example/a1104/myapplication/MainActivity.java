@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-        webView.loadUrl("http://www.baidu.com");
+        webView.loadUrl("http:JD.com");
 
     }
 }
