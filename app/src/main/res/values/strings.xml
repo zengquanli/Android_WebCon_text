@@ -1,7 +1,4 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="button">baidu</string>
-    <string name="string001">baidu</string>
-    <string name="webView">webView</string>
-    <string name="string001">baidu</string>
+    
 </resources>
