@@ -18,8 +18,14 @@ public class MainActivity extends AppCompatActivity {
         button = (Button)findViewById(R.id.button);
         webview.getSettings().setJavaScriptEnabled(true);
         webview.setWebViewClient(new WebViewClient(){
+            public boolean shouldOverrideUrlLoading(WebView view,String url){
+                view.loadUrl(url);
+                return true;
+            }
+
 
         });
+        webview.loadUrl("http://www.baidu.com");
 
 
     }
