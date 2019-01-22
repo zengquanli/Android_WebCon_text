@@ -7,9 +7,7 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button;
-
-    private WebView webView;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
