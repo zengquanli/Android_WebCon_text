@@ -19,7 +19,7 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity  {
     Button send_request;
-    TextView response_text;
+    TextView responseText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
         Button send_request = (Button) findViewById(R.id.send_request);
         response_text = (TextView) findViewById(R.id.response_text);
-        send_request.setOnClickListener((View.OnClickListener) this);
+        send_request.setOnClickListener(this);
 
 
     }
@@ -45,7 +45,9 @@ public class MainActivity extends AppCompatActivity  {
                 HttpURLConnection connection = null;
                 BufferedReader reader = null;
                 try{
-                    URL url = new URL("")
+                    URL url = new URL("http://www.baidu.com");
+                    connection = (HttpURLConnection)url.
+
                 }
             }
         })
