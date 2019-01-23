@@ -18,12 +18,36 @@ import java.net.ProtocolException;
 import java.net.URL;
 
 public class MainActivity extends AppCompatActivity  {
-    TextView responseText;
+    Button send_request;
+    TextView response_text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button send_request = (Button) findViewById(R.id.send_request);
+        response_text = (TextView) findViewById(R.id.response_text);
+        send_request.setOnClickListener((View.OnClickListener) this);
 
+
+    }
+    @Override
+    public void onClick(View v){
+        if(v.getId() == R.id.send_request){
+            send_requestWithHttpURLConnection();
+        }
+    }
+
+    private void send_requestWithHttpURLConnection() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                HttpURLConnection connection = null;
+                BufferedReader reader = null;
+                try{
+                    URL url = new URL("")
+                }
+            }
+        })
     }
 }
